@@ -14,6 +14,9 @@ def test_subtract():
     assert subtract(0, 5) == -5
 
 def test_division():
+    assert divide(6, 2) == 3
+
+def test_division_error():
     with pytest.raises(ZeroDivisionError):
         divide(10, 0)
 
